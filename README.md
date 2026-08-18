@@ -1,3 +1,3 @@
 la primera prueba de git
 
-SENA-CDT
+SENA-C.S.E.T
