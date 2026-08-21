@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ===== METADATOS: info que NO se ve, pero el navegador y Google usan ===== -->
+  <meta charset="UTF-8">                                <!-- acentos y ñ correctos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive (celular) -->
+  <meta name="description" content="Portafolio de Tu Nombre, aprendiz de ADSO en el SENA.">
+  <meta name="author" content="Tu Nombre">
+  <title>Portafolio — Kevin Pedraza</title>                 <!-- texto de la pestaña -->
+</head>
+
+<body>
+  <!-- ===== ENCABEZADO: nombre + menú de navegación ===== -->
+  <header>
+    <h1>Kevin Pedraza</h1>
+    <p>Aprendiz de Análisis y Desarrollo de Software — SENA Bucaramanga</p>
+    <nav>
+      <!-- los enlaces con # saltan a las secciones por su id -->
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main>
+
+    <!-- Sección "Sobre mí": incluye una imagen con figure/figcaption -->
+    <section id="sobre-mi" class="seccion">
+      <h2>Sobre mí</h2>
+      <figure>
+        <!-- Pon tu foto real (archivo "foto.jpg" en esta misma carpeta).
+             La etiqueta <img> NO lleva cierre. SIEMPRE con alt (texto alterno). -->
+        <img src="img/fotoperfil.jpeg" alt="Foto de Kevin Pedraza" width="180">
+        <figcaption></figcaption>
+      </figure>
+      <p>Hola mi nombre es Kevin Pedraza tengo 19 años vivo en floriablanca y soy aprendiz de analisis y desarrollo de software en el sena, <strong>me apasiona la tecnologia, inteligencia artificial y el desarrollo de software</strong>.
+        
+    </section>
+
+    <!-- Sección "Proyectos": una lista -->
+    <section id="proyectos" class="seccion">
+      <h2>Proyectos</h2>
+      <ul>
+        <li>Proyecto de un launcher Funcional Para el American Truck Simulator</li>
+        <li>Portafolio personal (¡este!)</li>
+        <li>Dashboard Techcorp</li>
+        <li>Landipage Agencia de Viajes</li>
+      </ul>
+    </section>
+
+    <!-- Sección "Multimedia" de ejemplo: video y audio locales -->
+    <section id="multimedia" class="seccion">
+      <h2>Multimedia</h2>
+      <!-- video y audio necesitan un archivo local (demo.mp4 / tema.mp3).
+           'controls' muestra los botones de reproducir. -->
+      <video src="img/videobugatti.mp4" width="560" height="315" controls>Tu navegador no soporta video.</video>
+      <audio src="img/musica.mp3" controls type="audio/mpeg">Tu navegador no soporta audio.</audio>
+    </section>
+
+    <!-- Sección "Habilidades": otra lista -->
+    <section id="habilidades" class="seccion">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML Basico</li>
+        <li>PHP Basico</li>
+        <li>GIT Comandos Basicos</li>
+        <li>Python Basico</li>
+        <li>Inteligencia Artificial </li>
+        <li>POO PHP Basica</li>
+        <li>CSS Basico</li>
+        <!-- Irás sumando: CSS, JavaScript, Git... -->
+      </ul>
+    </section>
+
+    <!-- Sección "Contacto": un formulario -->
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <form>
+        <label>Nombre:  <input type="text" name="nombre"></label>
+        <label>Correo: <input type="email" name="correo"></label>
+        <label>Mensaje: <textarea name="mensaje"></textarea></label>
+        <button type="submit">Enviar</button>
+      </form>
+      <!-- Enlace externo: target="_blank" lo abre en otra pestaña -->
+      <p>Mi GitHub: <a href="https://github.com/SantiDev11" target="_blank">github.com/SantiDev11</a></p>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer>
+    <hr> <!-- línea separadora, etiqueta sin cierre -->
+    <p>© 2026 Kevin Pedraza — Portafolio hecho en el curso de ADSO.</p>
+  </footer>
+</body>
+</html>
