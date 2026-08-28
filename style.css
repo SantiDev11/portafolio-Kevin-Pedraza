@@ -1037,6 +1037,15 @@ main {
   flex-grow: 1;
 }
 
+.proyecto-card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: auto;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border-glass);
+}
+
 .proyecto-card__tags {
   display: flex;
   gap: 0.5rem;
@@ -1051,6 +1060,65 @@ main {
   background: var(--bg-void);
   color: var(--neon-cyan);
   border: 1px solid rgba(0, 229, 255, 0.25);
+}
+
+/* Botón de Enlace al Repositorio */
+.proyecto-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-repo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border-radius: var(--r-md);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-glass);
+  color: var(--text-pure);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-repo svg {
+  color: var(--neon-cyan);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.btn-repo:hover {
+  background: rgba(0, 229, 255, 0.12);
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan-bright);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-repo:hover svg {
+  transform: scale(1.15) rotate(-8deg);
+  color: var(--neon-green);
+}
+
+.btn-repo--highlight {
+  background: rgba(0, 248, 54, 0.1);
+  border-color: rgba(0, 248, 54, 0.35);
+  color: var(--neon-green-bright);
+}
+
+.btn-repo--highlight svg {
+  color: var(--neon-green);
+}
+
+.btn-repo--highlight:hover {
+  background: rgba(0, 248, 54, 0.2);
+  border-color: var(--neon-green);
+  box-shadow: 0 0 25px rgba(0, 248, 54, 0.45);
 }
 
 /* Tarjeta Destacada */
