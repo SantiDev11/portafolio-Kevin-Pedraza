@@ -1066,7 +1066,7 @@ main {
 .proyecto-card__actions {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  width: 100%;
 }
 
 .btn-repo {
@@ -1075,7 +1075,7 @@ main {
   justify-content: center;
   gap: 0.55rem;
   width: 100%;
-  padding: 0.65rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: var(--r-md);
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-glass);
